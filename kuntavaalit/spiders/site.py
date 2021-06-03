@@ -35,7 +35,7 @@ class SiteSpider(scrapy.Spider):
         data = response.json()
         yield Candidate(
             url=response.url,
-            data=response.json(),
+            data=data,
             municipalityid=data['district']['id'],
             id=data['id'],
         )
