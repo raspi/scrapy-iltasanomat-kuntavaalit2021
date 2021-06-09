@@ -1,5 +1,8 @@
-# scrapy-iltasanomat-kuntavaalit2021
-Fetch all from [Iltasanomat Kuntavaalit 2021](https://www.vaalikone.fi/kunta2021/is) site
+# scrapy-sanoma-kuntavaalit2021
+
+Fetch all from Sanoma kuntavaalit 2021 
+[https://www.sanoma.fi/mita-teemme/tuotteet-ja-brandit/](brands) sites
+(Helsingin sanomat, Ilta-sanomat, Satakunnan Kansa, Aamulehti)
 
     scrapy crawl kaikki
 

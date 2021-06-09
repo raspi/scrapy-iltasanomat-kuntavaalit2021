@@ -18,13 +18,16 @@ class KuntavaalitPipeline:
         fullpath = None
 
         if isinstance(item, Item):
-            if isinstance(item, Question) or isinstance(item, Candidate):
+            if isinstance(item, ItemWithMunicipality):
                 municipality = str(item.municipalityid)
                 basepath = os.path.abspath(os.path.join(basepath, municipality))
 
             fname = type(item).__name__.lower()
             if isinstance(item, Candidate):
                 fname += '_' + str(item.id)
+            elif isinstance(item, Question):
+                fname += '_' + str(item.brandname)
+
             fname += ".json"
             fullpath = os.path.abspath(os.path.join(basepath, fname))
 

@@ -8,9 +8,8 @@ class Item:
 
 
 @dataclass
-class Candidate(Item):
-    id: int
-    municipalityid: int
+class Municipality(Item):
+    pass
 
 
 @dataclass
@@ -19,5 +18,20 @@ class Party(Item):
 
 
 @dataclass
-class Question(Item):
+class ItemWithMunicipality(Item):
     municipalityid: int
+
+
+@dataclass
+class Candidate(ItemWithMunicipality):
+    id: int
+
+
+@dataclass
+class PartyAlliance(ItemWithMunicipality):
+    pass
+
+
+@dataclass
+class Question(ItemWithMunicipality):
+    brandname: str
