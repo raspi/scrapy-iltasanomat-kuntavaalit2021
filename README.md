@@ -1,7 +1,7 @@
 # scrapy-sanoma-kuntavaalit2021
 
 Fetch all from Sanoma kuntavaalit 2021 
-[https://www.sanoma.fi/mita-teemme/tuotteet-ja-brandit/](brands) sites
+[brands](https://www.sanoma.fi/mita-teemme/tuotteet-ja-brandit/) sites
 (Helsingin sanomat, Ilta-sanomat, Satakunnan Kansa, Aamulehti)
 
     scrapy crawl kaikki
