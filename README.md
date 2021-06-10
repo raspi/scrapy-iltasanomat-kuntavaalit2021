@@ -1,4 +1,4 @@
-# scrapy-sanoma-kuntavaalit2021
+# scrapy-kuntavaalit2021-sanoma
 
 Fetch all from Sanoma kuntavaalit 2021 
 [brands](https://www.sanoma.fi/mita-teemme/tuotteet-ja-brandit/) sites
